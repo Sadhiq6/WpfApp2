@@ -1,0 +1,16 @@
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Occupation</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{- for user in users }}
+    <tr>
+        <td>{{ user.name }}</td>
+        <td>{{ user.occupation }}</td>
+    </tr>
+    {{- end }}
+    </tbody>
+</table>
